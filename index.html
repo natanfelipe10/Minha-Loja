@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tudo Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0056b3;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card .info {
+      padding: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    footer {
+      background-color: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Tudo Shop</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo à Tudo Shop</h1>
+    <p>Os melhores produtos com os melhores preços!</p>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/400x200" alt="Produto 1">
+      <div class="info">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto. A partir de R$99,90</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/400x200" alt="Produto 2">
+      <div class="info">
+        <h3>Produto 2</h3>
+        <p>Descrição breve do produto. A partir de R$149,90</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/400x200" alt="Produto 3">
+      <div class="info">
+        <h3>Produto 3</h3>
+        <p>Descrição breve do produto. A partir de R$79,90</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tudo Shop - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
